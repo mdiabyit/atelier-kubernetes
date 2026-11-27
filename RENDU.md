@@ -61,13 +61,20 @@ Un noeud est un conteneur qui fait tourner Kubernetes.
 
 9. Sur quels nœuds se trouvent vos 3 réplicas ? Collez la sortie de `kubectl get pods -l app=site -o wide`.
    ```
+<img width="1289" height="346" alt="image" src="https://github.com/user-attachments/assets/6793beba-ba7b-47e9-a9ce-be2715a12003" />
+
 
    ```
 10. Avec l'image `nginx:9.99`, quel statut avait le pod ? Quelle commande vous a donné la cause ?
     >
+      Le pod était en ErrImagePull, puis en ImagePullBackOff. 
+      La cause est donnée par kubectl describe pod <pod>
+    >
 11. Pendant la panne, le site restait-il accessible ? Pourquoi ?
     >
-
+   Oui il restait accessible. 
+   Le rolling update garde les anciens pods tant que les nouveaux ne sont pas prêts. Les 3 pods en 1.28 ont donc continué à      servir le site.
+   >
 ## Exercice 6 — Portainer & Mario
 
 12. URL publique de votre Mario :
