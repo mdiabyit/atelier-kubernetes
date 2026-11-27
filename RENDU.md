@@ -2,8 +2,8 @@
 
 > Complétez ce fichier au fil de l'atelier, puis faites un commit et un push (voir la section « Rendu » du README).
 
-**Nom / Prénom :**
-**Groupe :**
+**Nom / Prénom :** Diaby Mohamed      
+**Groupe :** RS1
 
 ---
 
@@ -79,8 +79,11 @@ Un noeud est un conteneur qui fait tourner Kubernetes.
 
 12. URL publique de votre Mario :
     >
+    https://shiny-succotash-774xrx69775frvvx-8585.app.github.dev/
+    >
 13. Retrouvez le Deployment `mario` en ligne de commande. Portainer et `kubectl` parlent-ils au même composant ? Lequel ?
     >
+    kubectl get deploy mario affiche bien le Deployment créé depuis Portainer. Portainer et kubectl parlent tous les deux à l'API Server.
 
 ## Bonus (facultatif)
 
