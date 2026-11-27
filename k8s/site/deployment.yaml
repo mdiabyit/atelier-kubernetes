@@ -8,7 +8,7 @@ metadata:
   labels:
     app: site
 spec:
-  replicas: 1                      # Exercice 5 : vous changerez cette valeur
+  replicas: 3                      # Exercice 5 : vous changerez cette valeur
   selector:
     matchLabels:
       app: site                    # doit correspondre aux labels du template ci-dessous
