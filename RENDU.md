@@ -10,10 +10,13 @@
 ## Exercice 1 — Cluster
 
 1. Combien de nœuds affiche `kubectl get nodes` ? Quel est le rôle de chacun ?
+   >
    On a 3 noeuds , l'un va agir en tant que serveur , deux autres agents.
    >
 2. Que montre `docker ps` ? Qu'est-ce qu'un « nœud » dans k3d, concrètement ?
+   >
 Docker ps montre les conteneurs qui sont lancés qui font tourner le cluster : On en a 4 <img width="1390" height="297" alt="image" src="https://github.com/user-attachments/assets/da39d9ef-d4cf-48c5-86e3-b3929b4908fe" />
+>
 On a les 3 cités précedemment ainsi que k3d-lab-serverlb qui est un conteneur ayant pour image nginx qui va servir de load balancer
 Un noeud est un conteneur qui fait tourner Kubernetes.
    >
